@@ -1,0 +1,32 @@
+{
+  "name": "cypress-e2e-framework",
+  "version": "1.0.0",
+  "description": "E2E Framework Testing Cypress",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "cypress:open": "cypress open --browser chrome --e2e",
+    "cypress:runDefault": "cypress run --spec cypress/integration/pom/*.spec.js",
+    "cypress:chrome": "cypress run --browser chrome --spec cypress/integration/pom/*.spec.js",
+    "cypress:edge": "cypress run --browser edge --spec cypress/integration/pom/*.spec.js",
+    "cypress:runChromeHeadless": "cypress run --headless --browser chrome --spec cypress/integration/pom/*.spec.js --record --key 4bc50df7-5eee-4147-8eb3-ccea611c8d4b"
+  },
+  "keywords": [
+    "e2e",
+    "automation",
+    "framework",
+    "cypress"
+  ],
+  "author": "joanmedia",
+  "license": "ISC",
+  "devDependencies": {
+    "@applitools/eyes-cypress": "^3.25.5",
+    "@cypress-audit/lighthouse": "^1.3.0",
+    "cypress": "^10.0.2",
+    "cypress-grep": "^2.5.3",
+    "cypress-mochawesome-reporter": "^3.0.1",
+    "cypress-xpath": "^1.6.2",
+    "mysql": "^2.18.1",
+    "typescript": "^4.5.4"
+  }
+}
